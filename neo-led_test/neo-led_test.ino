@@ -1,6 +1,5 @@
 #include <Adafruit_NeoPixel.h>
 
-#define calibration_factor -7050.0 // 로드셀 스케일 값 선언
 #define LED_PIN 12 // Strip led pin
 
 //네오픽셀을 사용하기 위해 객체 하나를 생성한다. 
