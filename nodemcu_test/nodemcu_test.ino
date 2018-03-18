@@ -1,10 +1,8 @@
-#include "Hx711.h"
 #define LED_BUILTIN 2
 void setup() {
   // LED_BUILTIN 은 보드에 내장되어 있는 LED 의 핀번호이며, NodeMCU 경우는 GPIO 16 으로 설정되어 있습니다.
   pinMode(LED_BUILTIN, OUTPUT);
   Serial.begin(9600);
-  Serial.println("Smart Holder demo");
 }
 
 // loop 함수는 보드가 작동되면 계속 반복해서 실행됩니다.

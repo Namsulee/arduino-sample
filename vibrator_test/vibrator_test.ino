@@ -15,24 +15,12 @@ void setup() {
 void loop()
 {
     unsigned char i;
-    /*for(i=1;i<124;i++)
+    for(i=1;i<124;i++)
     {
         Serial.print("Effect No: ");
         Serial.println(i);
         
         haptic.drv2605_Play_Waveform(i);
         delay(2000);
-    }*/
-
-    for (i = 1; i < 5; i++) {
-      haptic.drv2605_Play_Waveform(16);
-      delay(500);
     }
-
-    for (i = 1; i < 5; i++) {
-      haptic.drv2605_Play_Waveform(105);
-      delay(500);
-    }
-  
-
 }
