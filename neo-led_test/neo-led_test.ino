@@ -6,7 +6,7 @@
 //첫번째 인자값은 네오픽셀의 LED의 개수
 //두번째 인자값은 네오픽셀이 연결된 아두이노의 핀번호
 //세번째 인자값은 네오픽셀의 타입에 따라 바뀌는 flag
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(26, LED_PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(22, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() {
   Serial.begin(9600);  // 시리얼 통신 개방
@@ -15,18 +15,20 @@ void setup() {
 }
 
 void loop() {
-  colorWipe(strip.Color(255, 0, 0), 50); //빨간색 출력
-  colorWipe(strip.Color(0, 255, 0), 50); //녹색 출력
+  //colorWipe(strip.Color(255, 0, 0), 50); //빨간색 출력
+  //colorWipe(strip.Color(0, 255, 0), 50); //녹색 출력
   colorWipe(strip.Color(0, 0, 255), 50); //파란색 출력
+  colorWipe(strip.Color(0, 0, 200), 50); //파란색 출력
+  colorWipe(strip.Color(0, 0, 100), 50); //파란색 출력
 
-  theaterChase(strip.Color(127, 127, 127), 50); //흰색 출력
-  theaterChase(strip.Color(127,   0,   0), 50); //빨간색 출력
-  theaterChase(strip.Color(  0,   0, 127), 50); //파란색 출력
+  //theaterChase(strip.Color(127, 127, 127), 50); //흰색 출력
+  //theaterChase(strip.Color(127,   0,   0), 50); //빨간색 출력
+  //theaterChase(strip.Color(  0,   0, 127), 50); //파란색 출력
 
   //화려하게 다양한 색 출력
-  rainbow(20);
-  rainbowCycle(20);
-  theaterChaseRainbow(50);
+  //rainbow(20);
+  //rainbowCycle(20);
+  //theaterChaseRainbow(50);
 
   delay(1);
 }

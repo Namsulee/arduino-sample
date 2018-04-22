@@ -18,9 +18,9 @@ void loop()
     for(i=1;i<124;i++)
     {
         Serial.print("Effect No: ");
-        Serial.println(i);
+        Serial.println(14);
         
-        haptic.drv2605_Play_Waveform(i);
-        delay(2000);
+        haptic.drv2605_Play_Waveform(14);
+       // delay(10000);
     }
 }

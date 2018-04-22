@@ -35,8 +35,8 @@
 
 #include "HX711.h"
 
-#define DOUT  3
-#define CLK  2
+#define DOUT  2
+#define CLK  0
 
 HX711 scale(DOUT, CLK);
 
@@ -63,7 +63,7 @@ void loop() {
   scale.set_scale(calibration_factor); //Adjust to this calibration factor
 
   Serial.print("Reading: ");
-  Serial.print(scale.get_units(), 1);
+  Serial.print(scale.get_units()*4.5359, 1);
   Serial.print(" lbs"); //Change this to kg and re-adjust the calibration factor if you follow SI units like a sane person
   Serial.print(" calibration_factor: ");
   Serial.print(calibration_factor);
