@@ -4,3 +4,4 @@
 ## 3.vibrator motor control
 ## 4.loadcell contorl
 ## 5.Dotmatrix
+## 6.Buzzer
