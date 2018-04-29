@@ -3,5 +3,5 @@
 ## 2.neo pixel strip LED control
 ## 3.vibrator motor control
 ## 4.loadcell contorl
-## 5.Dotmatrix
-## 6.Buzzer
+## 5.dotmatrix
+## 6.buzzer
